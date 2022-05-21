@@ -52,7 +52,7 @@ abstract class Route implements IRoute
      * @return string|null
      * @throws NotFoundHttpException
      */
-    public function renderRoute(Request $request, Router $router): ?string
+    public function renderRoute(Request $request, Router $router)
     {
         $router->debug('Starting rendering route "%s"', get_class($this));
 
