@@ -322,7 +322,7 @@ class Router
      * @throws HttpException
      * @throws Exception
      */
-    public function start(): ?string
+    public function start()
     {
         $this->debug('Router starting');
 
@@ -358,7 +358,7 @@ class Router
      * @throws HttpException
      * @throws Exception
      */
-    public function routeRequest(): ?string
+    public function routeRequest()
     {
         $this->debug('Routing request');
 

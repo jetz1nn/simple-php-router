@@ -59,14 +59,14 @@ class SimpleRouter
      * @throws HttpException
      * @throws Exception
      */
-    public static function start(): void
+    public static function start()
     {
         // Set default namespaces
         foreach (static::router()->getRoutes() as $route) {
             static::addDefaultNamespace($route);
         }
 
-        echo static::router()->start();
+        return static::router()->start();
     }
 
     /**
